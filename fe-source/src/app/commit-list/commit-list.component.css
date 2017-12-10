@@ -1,6 +1,6 @@
 .commit-message {
   display: inline-block;
-  width: 90%;
+  width: 1000px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -10,10 +10,4 @@
 
 .commit-details {
   margin-top: 5px;
-}
-
-.commit-refresh-btn {
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  background-color: lightgray;
 }
