@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-12">
+    <button type="button" class="btn btn-default pull-right commit-refresh-btn" (click)="loadCommits()">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Refresh
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </button>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading">Commits</div>
+  <div class="panel-body">
+    <div class="media" *ngFor="let item of commits">
+      <div class="media-left">
+        <a href="#">
+          <img alt="Avatar" class="media-object" [src]="item.author.avatar_url"
+               data-holder-rendered="true" style="width: 64px; height: 64px;">
+        </a>
+      </div>
+      <div class="media-body">
+        <span class="media-heading commit-message">{{item.commit.message}}</span>
+        <div class="commit-details">
+          <div class="pull-left">
+            <strong>{{item.author.login}}</strong>
+          </div>
+          <div class="pull-right">Commit: {{item.sha}}</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

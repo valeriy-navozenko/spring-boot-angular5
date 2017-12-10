@@ -1,0 +1,19 @@
+.commit-message {
+  display: inline-block;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.commit-details {
+  margin-top: 5px;
+}
+
+.commit-refresh-btn {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  background-color: lightgray;
+}
